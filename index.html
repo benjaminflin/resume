@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: Roboto, sans-serif;
+                width: 100%;
+                height: 100%;
+            }
+            a {
+                color: #3593ff;
+            }
+            main {
+                margin: 20px;
+            }
+            section {
+                margin: 0 10px;
+            }
+            header {
+                margin: 30px;
+                margin-bottom: 0;
+            }
+            .details {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                grid-column-gap: 10px;
+                grid-row-gap: 5px;
+                margin: 14px 0;
+                font-size: 10pt;
+            }
+            .details .fas, 
+            .details .fab {
+                margin-right: 3px;
+                font-size: 12pt;
+            }
+            .line {
+                width: 100%;
+                height: 2px;
+                background-color: #ccc;
+                margin-bottom: 10px;
+            }
+            .name {
+                font-size: 24pt;
+                line-height: 1.8;
+                font-weight: 500;
+            }
+            .contact-info {
+                margin: 20px 0;
+                color: #777;
+                font-size: 10pt;
+                font-weight: 300;
+            }
+            .section-title {
+                font-size: 13pt;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ccc;
+                margin: 10px 0;
+            }
+            .section-title :nth-child(2) {
+                margin-left: .5em;
+            }
+            .section-title 
+                .fas,
+            .section-title .fab {
+                font-size: 24pt;
+                line-height: 0.8;
+            }
+            .section-body {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-row-gap: 1.5em;
+            }
+            .subsection-title {
+                font-weight: 600;
+                font-size: 15pt;
+                line-height: 1.1;
+                margin-bottom: .5em;
+            }
+            .subsection-subtitle {
+                font-weight: 300;
+                font-size: 11pt;
+            }
+            .subsection-info {
+                font-size: 10pt;
+                font-weight: 500;
+            }
+            .subsection-body {
+                line-height: 1.2;
+                font-size: 11pt;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="name">Benjamin Flin</div>
+            <div class="title">Software Engineer and Web Developer</div>
+            <div class="details">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    530-400-1959</div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:brf2117@columbia.edu">brf2117@columbia.edu</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i> 
+                    <a href="https://github.com/benjaminflin">https://github.com/benjaminflin</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="section-title">
+                    <i class="fas fa-suitcase"></i>
+                    <div>
+                        Employment History
+                    </div>
+                </div>
+                <div class="section-body">
+                    <div class="subsection-header">
+                        <div class="subsection-info">Summer 2018</div>
+                    </div>
+                    <div class="subsection-content">
+                        <div class="subsection-title">Frontend Mobile Developer, International Criminal Court</div>
+                        <div class="subsection-subtitle">Davis, CA - Amsterdam, Netherlands</div>
+                            <div class="subsection-body">
+                                <ul>
+                                    <li>Communicated with client in creating digital exhibit</li>
+                                    <li>Collaborated remotely with engineers to make digital exhibit mobile friendly</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="subsection-header">
+                            <div class="subsection-info">Summer 2018</div>
+                        </div>
+                        <div class="subsection-content">
+                            <div class="subsection-title">Video Production</div>
+                            <div class="subsection-subtitle">Spotlight Education, LLC <br/>Davis, CA</div>
+                            <div class="subsection-body">
+                                <ul>
+                                    <li>Created templated videos based on Web Animation API</li>
+                                    <li>Created tool for automated recording of audio for video</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="subsection-header">
+                        <div class="subsection-info">Summer 2016, Summer 2018</div>
+                    </div>
+                    <div class="subsection-content">
+                        <div class="subsection-title">Quality Assurance</div>
+                        <div class="subsection-subtitle">Spotlight Education, LLC <br/>Davis, CA</div>
+                        <div class="subsection-body">
+                            <ul>
+                                <li>Performed quality assurance on generated video reports and written reports</li>
+                                <li>Used proprietary software to perform data analysis and generate data-driven written reports</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="section-title">EDUCATION</div>
+                <div>
+                    <div class="subsection-title">Columbia University, Bachelor of Arts</div>
+                    <div class="subsection-info">Sep 2017 - Present, New York, NY</div>
+                    <p class="subsection-body">
+                        Computer Science and Math
+                        <br/>
+                        Relevant Coursework: Data Structures, Introduction to Computer Science, Calculus I-IV, Linear Algebra, Discrete Mathematics
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="section-title">EXTRA-CURRICULAR ACTIVITIES</div>
+                <div>
+                    <div class="subsection-title">Jazz/Classical Pianist</div>
+                    <div class="subsection-info">Summer 2015 - Present</div>
+                    <div class="subsection-body">
+                        <ul>
+                            <li>Played at the Newport Jazz Festival with Berklee Global Jazz Camp</li>
+                            <li>Numerous local gigs around Sacramento, CA and at Columbia University</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section style="max-width: 30vw">
+                <div class="section-title">DETAILS</div>
+                <div class="subsection-body">
+                    <div>7882 Wien Hall</div>
+                    <div>70 Morningside Drive</div>
+                    <div>New York, 10027, United States</div>
+                    <br/>
+                    <div>5304001959</div>
+                    <br/>
+                    <a href="mailto:brf2117@columbia.edu">brf2117@columbia.edu</div>
+                    <a href="https://github.com/benjaminflin">https://github.com/benjaminflin</a>
+                </div>
+                <div class="section-title">LANGUAGES</div>
+                <div class="subsection-body">
+                    <ul>
+                        <li>Node.js/Javascript</li>
+                        <li>HTML/CSS</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="section-title">TECHNOLOGIES</div>
+                <div class="subsection-body">
+                    <ul>
+                        <li>React.js</li>
+                        <li>Webpack</li>
+                        <li>Git</li>
+                        <li>REST</li>
+                        <li>GraphQL</li>
+                        <li>Web Animations API</li>
+                        <li>MongoDB/Mongoose</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
+                <div class="section-title">AWARDS</div>
+                <div class="subsection-body">
+                    <ul>
+                        <li>MTAC Senior Medallion, 2017</li>
+                        <li>Paderewski Gold Medal for College of American Musicians, 2017</li>
+                        <li>High School Diploma of Music for College of American Musicians, 2017</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
