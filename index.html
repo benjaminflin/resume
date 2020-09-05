@@ -1,185 +1,229 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
     <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Roboto, sans-serif;
-            width: 100%;
-            height: 100%;
-        }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, sans-serif;
+        width: 100%;
+        height: 100%;
+      }
 
-        a {
-            color: #3593ff;
-        }
+      a {
+        color: #3593ff;
+      }
 
-        main {
-            margin: 20px;
-        }
+      main {
+        margin: 20px;
+      }
 
-        section {
-            margin: 0 10px;
-        }
+      section {
+        margin: 0 10px;
+      }
 
-        header {
-            margin: 30px;
-            margin-bottom: 0;
-        }
+      header {
+        margin: 30px;
+        margin-bottom: 0;
+      }
 
-        .details {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-column-gap: 10px;
-            grid-row-gap: 5px;
-            margin: 14px 0;
-            font-size: 9pt;
-        }
+      .details {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        margin: 14px 0;
+        font-size: 8pt;
+      }
 
-        .details .fas,
-        .details .fab {
-            margin-right: 3px;
-            font-size: 12pt;
-        }
+      .details .fas,
+      .details .fab {
+        margin-right: 3px;
+        font-size: 11pt;
+      }
 
-        .line {
-            width: 100%;
-            height: 2px;
-            background-color: #ccc;
-            margin-bottom: 10px;
-        }
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+        margin-bottom: 10px;
+      }
 
-        .name {
-            font-size: 24pt;
-            line-height: 1.8;
-            font-weight: 500;
-        }
+      .name {
+        font-size: 18pt;
+        line-height: 1.8;
+        font-weight: 500;
+      }
 
-        .contact-info {
-            margin: 20px 0;
-            color: #777;
-            font-size: 10pt;
-            font-weight: 300;
-        }
+      .contact-info {
+        margin: 20px 0;
+        color: #777;
+        font-size: 10pt;
+        font-weight: 300;
+      }
 
-        .section-title {
-            font-size: 13pt;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #ccc;
-            margin: 10px 0;
-        }
+      .section-title {
+        font-size: 12pt;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        margin: 10px 0;
+      }
 
-        .section-title :nth-child(2) {
-            margin-left: .5em;
-        }
+      .section-title :nth-child(2) {
+        margin-left: 0.5em;
+      }
 
-        .section-title .fas,
-        .section-title .fab {
-            font-size: 24pt;
-            line-height: 0.8;
-        }
+      .section-title .fas,
+      .section-title .fab {
+        font-size: 18pt;
+        line-height: 0.8;
+      }
 
-        .section-body {
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-row-gap: 1.5em;
-        }
+      .section-body {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-row-gap: 1.5em;
+      }
 
-        .subsection-title {
-            font-weight: 600;
-            font-size: 15pt;
-            line-height: 1.1;
-            margin-bottom: .5em;
-        }
+      .subsection-title {
+        font-weight: 600;
+        font-size: 15pt;
+        line-height: 1.1;
+        margin-bottom: 0.5em;
+      }
 
-        .subsection-subtitle {
-            font-weight: 400;
-            font-size: 9pt;
-        }
+      .subsection-subtitle {
+        font-weight: 400;
+        font-size: 9pt;
+        color: #555;
+      }
 
-        .subsection-info {
-            font-size: 10pt;
-            font-weight: 500;
-        }
+      .subsection-info {
+        font-size: 10pt;
+        font-weight: 500;
+      }
 
-        .subsection-body {
-            line-height: 1.2;
-            font-size: 11pt;
-        }
+      .subsection-body {
+        line-height: 1.2;
+        font-size: 9pt;
+      }
 
-        .long-list {
-            column-count: 4;
-            column-gap: 10em;
-        }
+      .long-list {
+        font-size: 8pt;
+        display: flex;
+        flex-flow: wrap column;
+        max-height: 3rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="name">Benjamin Flin</div>
-        <div class="title">Junior Web Developer and Software Engineer</div>
-        <div class="details">
-            <div>
-                <i class="fas fa-phone"></i>
-                530-400-1959</div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:brf2117@columbia.edu">brf2117@columbia.edu</a>
-            </div>
-            <div>
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/benjaminflin">https://github.com/benjaminflin</a>
-            </div>
+      <div class="name">Benjamin Flin</div>
+      <div class="title">Web Developer and Software Engineer</div>
+      <div class="details">
+        <div>
+          <i class="fas fa-phone"></i>
+          530-400-1959
         </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:brf2117@columbia.edu">brf2117@columbia.edu</a>
+        </div>
+        <div>
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/benjaminflin"
+            >https://github.com/benjaminflin</a
+          >
+        </div>
+      </div>
     </header>
     <main>
-        <section>
-            <div class="section-title">
-                <i class="fas fa-suitcase"></i>
-                <div>
-                    Employment History
-                </div>
+      <section>
+        <div class="section-title">
+          <div>Employment History</div>
+        </div>
+        <div class="section-body">
+          <div class="subsection-header">
+            <div class="subsection-info">Summer 2020</div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">Software Engineer</div>
+            <div class="subsection-subtitle">
+              Moat Crossings Systems<br />Davis, CA
             </div>
-            <div class="section-body">
-                <div class="subsection-header">
-                    <div class="subsection-info">Summer 2018</div>
-                </div>
-                <div class="subsection-content">
-                    <div class="subsection-title">Frontend Mobile Developer</div>
-                    <div class="subsection-subtitle"> International Criminal Court <br />Davis, CA - Amsterdam,
-                        Netherlands</div>
-                    <div class="subsection-body">
-                        <ul>
-                            <li>Developed an interactive digital exhibit showcasing human rights violations in
-                                central Africa</li>
-                            <li>Exhibit showcased on the official ICC website and Twitter</li>
-                            <li>Created using React.js + Redux and remotely deployed</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subsection-header">
-                    <div class="subsection-info">Summer 2018</div>
-                </div>
-                <div class="subsection-content">
-                    <div class="subsection-title">HTML5 Video Developer</div>
-                    <div class="subsection-subtitle">Spotlight Education, LLC <br />Davis, CA</div>
-                    <div class="subsection-body">
-                        <ul>
-                            <li>Created templated data-driven videos on a custom web framework based on Web Animation
-                                API</li>
-                            <li>Developed tool to streamline audio recording process for these videos</li>
-                            <li>Helped develop OCR testing tool for captions</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subsection-header">
+            <div class="subsection-body">
+              <ul>
+                <li>
+                  Helped develop a node.js/express like server-side javascript
+                  framework for embeddables using the Duktape C library.
+                </li>
+                <li>
+                  Wrote a Python C extension for an existing SQL database.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="subsection-header">
+            <div class="subsection-info">Summer 2018</div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">Frontend Mobile Developer</div>
+            <div class="subsection-subtitle">
+              International Criminal Court <br />Davis, CA - Amsterdam,
+              Netherlands
+            </div>
+            <div class="subsection-body">
+              <ul>
+                <li>
+                  Developed an interactive digital exhibit showcasing human
+                  rights violations in central Africa
+                </li>
+                <li>
+                  Exhibit showcased on the official ICC website and Twitter
+                </li>
+                <li>Created using React.js + Redux and remotely deployed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subsection-header">
+            <div class="subsection-info">Summer 2018</div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">HTML5 Video Developer</div>
+            <div class="subsection-subtitle">
+              Spotlight Education, LLC <br />Davis, CA
+            </div>
+            <div class="subsection-body">
+              <ul>
+                <li>
+                  Created templated data-driven videos on a custom web framework
+                  based on Web Animation API
+                </li>
+                <li>
+                  Developed tool to streamline audio recording process for these
+                  videos
+                </li>
+                <li>Helped develop OCR testing tool for captions</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="subsection-header">
                     <div class="subsection-info">Summer 2016,<br /> Summer 2018</div>
                 </div>
                 <div class="subsection-content">
@@ -194,56 +238,107 @@
                                 data-driven pdf reports</li>
                         </ul>
                     </div>
-                </div>
-
+                </div> -->
+        </div>
+      </section>
+      <section>
+        <div class="section-title">Projects</div>
+        <div class="section-body">
+          <div class="subsection-header">
+            <div class="subsection-info">December 2019 <br /></div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">A* Algorithm Visualization</div>
+            <div class="subsection-subtitle">
+              Written in Purescript/Javascript.
+              <a href="https://github.com/benjaminflin/astarvis"
+                >See on Github.</a
+              >
             </div>
-        </section>
-        <section>
-            <div class="section-title">
-                <i class="fas fa-graduation-cap"></i>
-                <div>
-                    Education
-                </div>
+            <p class="subsection-body">
+              A visualization of the A* algorithm using grid tiles. The searched
+              states, starting state, goal state and the final path are
+              represented through colored squares. The user may draw and delete
+              barriers in order to better understand the algorithm.
+            </p>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="subsection-header">
+            <div class="subsection-info">Summer 2020 <br /></div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">Right Truncatable Primes</div>
+            <div class="subsection-subtitle">
+              Written in Haskell.
+              <a
+                href="https://github.com/benjaminflin/right-truncatable-primes/blob/master/Main.hs"
+                >See on Github.</a
+              >
             </div>
-            <div class="section-body">
-                <div class="subsection-header">
-                    <div class="subsection-info">Sep 2017 - Present, <br /> New York, NY</div>
-                </div>
-                <div class="subsection-content">
-                    <div class="subsection-title">Columbia University, Bachelor of Arts</div>
-                    <div class="subsection-subtitle">Computer Science and Math</div>
-                    <p class="subsection-body">
-                        Relevant Coursework: Advanced Programming, Data Structures, Introduction to Computer Science,
-                        Calculus I-IV, Linear Algebra, Discrete Mathematics, Analysis and Optimization, Introduction to
-                        Modern Analysis I
-                    </p>
-                </div>
+            <p class="subsection-body">
+              A small Haskell program to find all of the
+              <a
+                href="https://en.wikipedia.org/wiki/Truncatable_prime#:~:text=There%20are%2027%20restricted%20right,sequence%20A239747%20in%20the%20OEIS)"
+              >
+                right truncatable primes</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-title">
+          <div>Education</div>
+        </div>
+        <div class="section-body">
+          <div class="subsection-header">
+            <div class="subsection-info">
+              Sep 2017 - Present, <br />
+              New York, NY
             </div>
-        </section>
-        <section>
-            <div class="section-title">
-                <i class="fas fa-project-diagram"></i>
-                <div>Programming Languages and Technologies</div>
+          </div>
+          <div class="subsection-content">
+            <div class="subsection-title">
+              Columbia University, Bachelor of Arts
             </div>
-            <div class="section-body">
-                <ul class="long-list">
-                    <li>Node.js/Javascript</li>
-                    <li>HTML/CSS</li>
-                    <li>React.js</li>
-                    <li>Webpack</li>
-                    <li>Git</li>
-                    <li>Excel/Word</li>
-                    <li>Java</li>
-                    <li>C/C++</li>
-                    <li>Python</li>
-                    <li>GraphQL/Rest</li>
-                    <li>MongoDB/Mongoose</li>
-                    <li>Express.js</li>
-                </ul>
-            </div>
-        </section>
-        <!-- Optional Personal Interests and Awards -->
-        <!--section>
+            <div class="subsection-subtitle">Computer Science and Math</div>
+            <p class="subsection-body">GPA: 3.77</p>
+            <p class="subsection-body">
+              Relevant Coursework: Artificial Intelligence, Fundamentals of
+              Computer Systems, Computer Science Theory, Advanced Programming,
+              Data Structures, Introduction to Computer Science, Calculus I-IV,
+              Linear Algebra, Discrete Mathematics, Analysis and Optimization,
+              Introduction to Modern Analysis I
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-title">
+          <div>Programming Languages and Technologies</div>
+        </div>
+        <div>
+          <ul class="long-list">
+            <li>Node.js/Javascript</li>
+            <li>HTML/CSS</li>
+            <li>Rust</li>
+            <li>React.js</li>
+            <li>Haskell/Purescript</li>
+            <li>C/C++</li>
+            <li>Git</li>
+            <li>Webpack</li>
+            <li>Excel/Word</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>GraphQL/Rest</li>
+            <li>MongoDB/Mongoose</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Optional Personal Interests and Awards -->
+      <!--section>
                 <div class="section-title">Personal Interests</div>
                 <div class="section-body">
                     <div class="subsection-header">
@@ -276,6 +371,6 @@
                 </div>
             </section-->
     </main>
-</body>
-
+  </body>
 </html>
+
